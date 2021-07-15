@@ -1,0 +1,41 @@
+.container--login{
+height: 100vh !important;
+}
+.form--login{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 2;
+  overflow: hidden !important;
+  background-color: rgba(0, 251, 255, 0.53);
+  backdrop-filter: blur(2px);
+  
+}
+.btn--perso{
+    background-color: #f9ff8c;
+}
+.blobs {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    fill: #f9ff8c;
+    width: 200vmax;
+    z-index: -1;
+    animation: move 10s ease-in-out infinite;
+    transform-origin: 50% 50%;
+  }
+  
+  body {
+
+   
+    overflow: hidden;
+
+    background: #14cdda;
+
+  }
+  input{
+      background: none;
+      border: none;
+      border-bottom: thin solid black;
+  }
+  input:focus{
+    outline: none;
+}
