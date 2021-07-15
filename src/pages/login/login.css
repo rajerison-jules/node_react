@@ -1,0 +1,69 @@
+.container--login {
+  height: 100vh !important;
+  background: rgb(255, 255, 255);
+  color: black;
+}
+
+@media (min-width: 576px) {
+  .container--login {
+    font-size: 1.25rem;
+  }
+  .btn--perso {
+    font-size: 1.25rem !important;
+  }
+}
+@media (min-width: 768px) {
+  .container--login {
+    font-size: 1.5rem;
+  }
+  .btn--perso {
+    font-size: 1.5rem !important;
+  }
+}
+@media (min-width: 992px) {
+  .container--login {
+    font-size: 1.75rem;
+  }
+  .btn--perso {
+    font-size: 1.75rem !important;
+  }
+}
+@media (min-width: 1200px) {
+  .container--login {
+    font-size: 0.5rem;
+  }
+  .btn--perso {
+    font-size: 0.5rem !important;
+  }
+}
+
+.form--login {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 2;
+  overflow: hidden !important;
+  background-color: rgb(255, 255, 255);
+  backdrop-filter: blur(2px);
+}
+.btn--perso {
+  background-color: #f5cb5c !important;
+  color: rgb(0, 136, 255) !important;
+}
+.blobs {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  fill: #f5cb5c;
+  width: 200vmax;
+  z-index: -1;
+  animation: move 10s ease-in-out infinite;
+  transform-origin: 50% 50%;
+}
+
+input {
+  background: none;
+  border: none;
+  border-bottom: thin solid rgb(142, 142, 142);
+}
+input:focus {
+  outline: none;
+}
