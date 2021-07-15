@@ -50,8 +50,8 @@
 }
 .blobs {
   position: absolute;
-  top: 0;
-  right: 0px;
+  top: -100px;
+  left: 0px;
   fill: #f5cb5c;
   width: 200vmax;
   z-index: -1;
@@ -59,11 +59,15 @@
   transform-origin: 50% 50%;
 }
 
-input {
+input.form-control {
   background: none;
   border: none;
   border-bottom: thin solid rgb(142, 142, 142);
+  font-size: 0.5rem;
 }
-input:focus {
-  outline: none;
+input.form-control:focus {
+  outline: none !important;
+}
+.btn-primary {
+  font-size: 0.5rem !important;
 }
