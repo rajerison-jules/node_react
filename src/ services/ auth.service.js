@@ -5,6 +5,7 @@ const register = (username, email, password) => {
     username,
     email,
     password,
+    role: ["user"],
   });
 };
 
@@ -13,6 +14,7 @@ const login = (username, password) => {
     .post("/api/auth/signin", {
       username,
       password,
+      role: ["user"],
     })
     .then((response) => {
       if (response.data.accessToken) {

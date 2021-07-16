@@ -9,7 +9,7 @@ const required = (value) => {
   if (!value) {
     return (
       <div className="alert alert-danger" role="alert">
-        This field is required!
+        Ce champ est requis!
       </div>
     );
   }
@@ -81,7 +81,7 @@ export default function Login(props) {
         </div>
         <hr />
         <Form onSubmit={handleLogin} ref={form} className="text-center">
-          <input
+          <Input
             type="text"
             placeholder="username"
             className="form-control "
@@ -91,7 +91,7 @@ export default function Login(props) {
             validations={[required]}
           />
           <br />
-          <input
+          <Input
             placeholder="password"
             type="password"
             className="form-control "

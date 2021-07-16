@@ -11,7 +11,7 @@ const required = (value) => {
   if (!value) {
     return (
       <div className="alert alert-danger" role="alert">
-        This field is required!
+        Ce champ est requis!
       </div>
     );
   }
@@ -20,7 +20,7 @@ const validEmail = (value) => {
   if (!isEmail(value)) {
     return (
       <div className="alert alert-danger" role="alert">
-        This is not a valid email.
+        Ceci n'est pas un email valide.
       </div>
     );
   }
@@ -29,7 +29,7 @@ const vusername = (value) => {
   if (value.length < 3 || value.length > 20) {
     return (
       <div className="alert alert-danger" role="alert">
-        The username must be between 3 and 20 characters.
+        Le nom d'utilisateur doit comporter entre 3 et 20 caractères.
       </div>
     );
   }
@@ -38,7 +38,7 @@ const vpassword = (value) => {
   if (value.length < 6 || value.length > 40) {
     return (
       <div className="alert alert-danger" role="alert">
-        The password must be between 6 and 40 characters.
+        Le mot de passe doit comporter entre 6 et 40 caractères.
       </div>
     );
   }
@@ -109,13 +109,13 @@ export default function Signin(props) {
           </svg>
         </div>
         <div className="text-center text-secondary">
-          <h4>Se connecter</h4>
+          <h4>S'inscrire'</h4>
         </div>
         <hr />
         <Form onSubmit={handleRegister} ref={form} className="text-center">
           {!successful && (
             <div>
-              <input
+              <Input
                 type="text"
                 className="form-control"
                 placeholder="username"
@@ -125,7 +125,7 @@ export default function Signin(props) {
                 validations={[required, vusername]}
               />
               <br />
-              <input
+              <Input
                 type="text"
                 className="form-control"
                 name="email"
@@ -135,7 +135,7 @@ export default function Signin(props) {
                 validations={[required, validEmail]}
               />
               <br />
-              <input
+              <Input
                 type="password"
                 className="form-control"
                 name="password"

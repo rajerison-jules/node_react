@@ -3,10 +3,11 @@ import "./voiture.css";
 import TextareaAutosize from "react-textarea-autosize";
 import { AiOutlineSend } from "react-icons/ai";
 import axios from "./../axios";
+import authHeader from "./../ services/auth-header";
 export default function Voiture(props) {
   const [comments, setComments] = useState(false);
   const [text, setText] = useState();
-
+  var randomColor = Math.floor(Math.random() * 16777215).toString(16);
   var objDiv = document.getElementsByClassName(".bot");
   objDiv.scrollTop = objDiv.scrollHeight;
   function envoyer(el) {
@@ -19,12 +20,7 @@ export default function Voiture(props) {
             value: el,
             voitureId: props.id,
           },
-          {
-            headers: {
-              "x-access-token":
-                "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjI2MzM2MjEwLCJleHAiOjE2MjY0MjI2MTB9.4WAtubbo5ojXRlkuk2VKpU05sWtuG8-0siKMYWKEj2k",
-            },
-          }
+          { headers: authHeader() }
         )
         .then((response) => {
           console.log(response.data);
@@ -41,16 +37,15 @@ export default function Voiture(props) {
   function getvalue(e) {
     setText(e.target.value);
   }
-
   return (
     <div className="d-flex  justify-content-center mt-4">
       <div className=" container--perso row d-flex justify-content-center align-items-center rounded ">
         <div className=" col-4 col-md-2 p-1">
-          <div className="image--container d-flex justify-content-center align-items-center ">
-            <img
-              src="https://lessentiel.macif.fr/sites/default/files/2019-03/francais-voiture.jpg"
-              className="image--perso "
-            />
+          <div
+            className="image--container d-flex justify-content-center align-items-center "
+            style={{ background: ` #ff${randomColor}` }}
+          >
+            <span className=" id--perso bold">{props.id}</span>
           </div>
         </div>
         <div className="litle--container col-4 d-flex justify-content-start align-items-center">
