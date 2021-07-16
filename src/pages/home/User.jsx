@@ -81,7 +81,6 @@ export default function Home(props) {
       setVoiture(response.data);
     });
   }, []);
-  console.log(voiture.comments);
   return (
     <div>
       <div className="d-flex justify-content-center align-items-center align-center border w-100 h-100 ">
