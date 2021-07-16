@@ -80,8 +80,8 @@ export default function Home(props) {
     axios.get(`/api/voitures`, { headers: authHeader() }).then((response) => {
       setVoiture(response.data);
     });
-  }, [voiture]);
-  console.log(voiture);
+  }, []);
+  console.log(voiture.comments);
   return (
     <div>
       <div className="d-flex justify-content-center align-items-center align-center border w-100 h-100 ">
@@ -158,6 +158,7 @@ export default function Home(props) {
                 mark={el.mark}
                 detail={el.detail}
                 access={access}
+                comment={el.comments}
                 id={el.id}
               />
             );
