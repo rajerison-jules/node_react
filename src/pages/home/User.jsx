@@ -80,7 +80,7 @@ export default function Home(props) {
     axios.get(`/api/voitures`, { headers: authHeader() }).then((response) => {
       setVoiture(response.data);
     });
-  }, []);
+  }, [voiture]);
   return (
     <div>
       <div className="d-flex justify-content-center align-items-center align-center border w-100 h-100 ">
