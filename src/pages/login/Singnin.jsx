@@ -10,7 +10,7 @@ import AuthService from "./../../ services/ auth.service";
 const required = (value) => {
   if (!value) {
     return (
-      <div className="alert alert-danger" role="alert">
+      <div className="alert alert-danger message--perso" role="alert">
         Ce champ est requis!
       </div>
     );
@@ -98,7 +98,8 @@ export default function Signin(props) {
 
   return (
     <div className=" d-flex align-items-center justify-content-center  border container--login ">
-      <div className="form--login rounded p-5">
+      <div className="form--login rounded ">
+      <div >
         <div className="blobs">
           <svg
             version="1.1"
@@ -109,7 +110,7 @@ export default function Signin(props) {
           </svg>
         </div>
         <div className="text-center text-secondary">
-          <h4>S'inscrire'</h4>
+          <h4 className="titre--login">S'inscrire</h4>
         </div>
         <hr />
         <Form onSubmit={handleRegister} ref={form} className="text-center">
@@ -162,6 +163,7 @@ export default function Signin(props) {
           )}
           <CheckButton style={{ display: "none" }} ref={checkBtn} />
         </Form>
+        </div>
       </div>
     </div>
   );

@@ -98,7 +98,7 @@ export default function Home(props) {
           <span>
             <VscAdd className="h6 m-1 d-flex d-flex justify-content-center " />
           </span>
-          <span>Ajouter Des Voitures </span>{" "}
+          <span className="button--ajout">Ajouter Des Voitures </span>{" "}
         </Button>
       </div>
 

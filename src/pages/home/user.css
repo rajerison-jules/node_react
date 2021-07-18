@@ -17,6 +17,7 @@
 }
 .message--perso {
   font-size: 0.4em;
+  position: absolute !important;
 }
 .label--perso {
   font-size: 0.5em;

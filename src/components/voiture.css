@@ -6,7 +6,7 @@
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   overflow: hidden;
   margin: 0 !important;
-  margin: 0;
+  padding: 0 25px;
   font-family: "Nunito", sans-serif;
   width: 70vw;
 }
@@ -118,12 +118,44 @@ button {
   align-items: center;
   justify-content: flex-end;
   padding: 8px;
+  z-index:1000 !important;
+
 }
-.out {
-  font-size: 0.5em;
+/*.out {
+  font-size: 0.5rem;
   cursor: pointer;
 }
 .id--perso {
   font-size: 0.5rem;
   color: rgb(255, 255, 255);
+}*/
+.button--ajout {
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+@media (min-width: 576px) {
+  
+  .out, .button--ajout {
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+}
+@media (min-width: 768px) {
+   .out, .button--ajout {
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+}
+@media (min-width: 992px) {
+  .out, .button--ajout {
+  font-size: 0.5rem;
+  cursor: pointer;
+}
+}
+@media (min-width: 1200px) {
+  .out, .button--ajout {
+  font-size: 0.5rem;
+  cursor: pointer;
+}
 }
