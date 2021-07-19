@@ -19,6 +19,7 @@ export default function Voiture(props) {
             name: "test",
             value: el,
             voitureId: props.id,
+            userId: props.user.id,
           },
           { headers: authHeader() }
         )

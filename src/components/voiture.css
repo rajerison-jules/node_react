@@ -47,8 +47,8 @@
 }
 .container--messageme {
   font-size: 0.5em;
-  background-color: #58abff;
-  color: #fff;
+  background-color: #d2e6fb;
+  color: rgb(46, 46, 46);
   padding: 5px 20px;
   height: auto;
   overflow-wrap: break-word;
@@ -118,8 +118,7 @@ button {
   align-items: center;
   justify-content: flex-end;
   padding: 8px;
-  z-index:1000 !important;
-
+  z-index: 1000 !important;
 }
 /*.out {
   font-size: 0.5rem;
@@ -135,27 +134,30 @@ button {
 }
 
 @media (min-width: 576px) {
-  
-  .out, .button--ajout {
-  font-size: 0.8rem;
-  cursor: pointer;
-}
+  .out,
+  .button--ajout {
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
 }
 @media (min-width: 768px) {
-   .out, .button--ajout {
-  font-size: 0.8rem;
-  cursor: pointer;
-}
+  .out,
+  .button--ajout {
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
 }
 @media (min-width: 992px) {
-  .out, .button--ajout {
-  font-size: 0.5rem;
-  cursor: pointer;
-}
+  .out,
+  .button--ajout {
+    font-size: 0.5rem;
+    cursor: pointer;
+  }
 }
 @media (min-width: 1200px) {
-  .out, .button--ajout {
-  font-size: 0.5rem;
-  cursor: pointer;
-}
+  .out,
+  .button--ajout {
+    font-size: 0.5rem;
+    cursor: pointer;
+  }
 }
