@@ -3,7 +3,8 @@
 ### Cloner  le projet 
  votre terminal  ou console 
 ```bash
-  git clone git clone https://github.com/rajerison-jules/test_frontEnd.git
+ 
+ git clone https://github.com/rajerison-jules/test_frontEnd.git
 
 ```
 ### Pre requis 
